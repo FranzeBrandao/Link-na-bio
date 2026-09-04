@@ -33,8 +33,32 @@ python3 -m http.server 8000
 # abra http://localhost:8000
 ```
 
-## Publicar
+## Publicar na Hostinger (o que está em uso)
 
-Suba a raiz do repositório em qualquer host estático (Netlify, Cloudflare Pages,
-Vercel, GitHub Pages). O arquivo `_headers` já configura cache e cabeçalhos de
-segurança em Netlify/Cloudflare Pages.
+A página fica em `https://farmaciabemestarsobral.com/compreaqui/`, numa subpasta
+do site principal. O pacote pronto para subir é o `compreaqui.zip`.
+
+1. hPanel -> **Arquivos** -> **Gerenciador de Arquivos**
+2. Entre em `public_html` e crie a pasta `compreaqui`
+3. Dentro dela, envie o `compreaqui.zip` e use **Extrair**
+4. Apague o zip depois de extrair
+
+O `index.html` tem que ficar em `public_html/compreaqui/index.html` — se ele cair
+um nível mais fundo, a página abre sem estilo.
+
+O `.htaccess` incluído vale só para essa pasta (cache, compressão, cabeçalhos de
+segurança e a barra final em `/compreaqui`). Ele não interfere no site principal:
+como `compreaqui` é uma pasta real, as regras de reescrita do site — inclusive as
+do WordPress — não capturam esses endereços.
+
+Para regerar o pacote depois de mudar algo:
+
+```bash
+rm -rf dist compreaqui.zip && mkdir dist
+cp -r index.html .htaccess favicon.png assets images dist/
+rm -f dist/images/logo-farmacia-bem-estar.png
+(cd dist && zip -qr ../compreaqui.zip .) && rm -rf dist
+```
+
+Em outro host estático (Netlify, Cloudflare Pages, Vercel, GitHub Pages) basta
+subir a raiz do repositório; nesses o `.htaccess` é ignorado e vale o `_headers`.
