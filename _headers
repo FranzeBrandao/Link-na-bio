@@ -1,0 +1,12 @@
+/assets/fonts/*
+  cache-control: public, max-age=31536000, immutable
+
+/images/*
+  cache-control: public, max-age=2592000
+
+/assets/*.css
+  cache-control: public, max-age=3600
+
+/*
+  x-content-type-options: nosniff
+  referrer-policy: strict-origin-when-cross-origin
