@@ -14,7 +14,7 @@ favicon.png, robots.txt, _headers
 farmacia-bem-estar-site-fundo-branco.zip   build anterior, guardado como referência
 ```
 
-Sem build, sem dependências, sem JavaScript: é HTML + CSS puros.
+Sem build e sem dependências: HTML + CSS, com um script mínimo no fim do `index.html` que, no celular, faz os botões abrirem o aplicativo do WhatsApp direto (`whatsapp://`), sem a página intermediária do `wa.me`.
 
 ## Links da página
 
