@@ -20,7 +20,7 @@ Sem build, sem dependências, sem JavaScript: é HTML + CSS puros.
 
 | Botão | Destino |
 | --- | --- |
-| WhatsApp — Sinhá Sabóia (Bem Estar I) | `https://wa.me/5588997306141` |
+| WhatsApp — Sinhá Sabóia (Bem Estar I) | `https://wa.me/5588997269402` — WhatsApp Business (fora da API da Meta) |
 | WhatsApp — Renato Parente (Bem Estar II) | `https://wa.me/558897172304` |
 | Site da Farmácia Bem Estar | `https://farmaciabemestarsobral.com/` |
 
