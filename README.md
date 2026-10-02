@@ -14,7 +14,7 @@ favicon.png, robots.txt, _headers
 farmacia-bem-estar-site-fundo-branco.zip   build anterior, guardado como referência
 ```
 
-Sem build e sem dependências: HTML + CSS, com um script mínimo no fim do `index.html` que, no celular, faz os botões abrirem o aplicativo do WhatsApp direto (`whatsapp://`), sem a página intermediária do `wa.me`.
+Sem build, sem dependências, sem JavaScript: é HTML + CSS puros.
 
 ## Links da página
 
@@ -22,7 +22,7 @@ Sem build e sem dependências: HTML + CSS, com um script mínimo no fim do `inde
 | --- | --- |
 | WhatsApp — Sinhá Sabóia (Bem Estar I) · WhatsApp Business | `https://wa.me/5588997269402` |
 | WhatsApp — Sinhá Sabóia (Bem Estar I) · API da Meta | `https://wa.me/5588997306141` |
-| WhatsApp — Renato Parente (Bem Estar II) | `https://wa.me/558897172304` |
+| WhatsApp — Renato Parente (Bem Estar II) | `https://wa.me/558897172304` — conta registrada sem o 9 (+55 88 9717-2304); não acrescentar o 9 |
 | Site da Farmácia Bem Estar | `https://farmaciabemestarsobral.com/` |
 
 Para trocar um número ou um texto, edite apenas o `index.html`.
